@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -39,10 +40,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link 
-            href="/" 
+            href="/about" 
             className="text-xl font-bold text-white hover:text-blue-400 transition-colors"
           >
-            DwoDwoS
+            <Image 
+              src="/favicon_DoDoS_SVG.svg"
+              alt="Logo DoDoS"
+              width={64}
+              height={1}
+              >
+            </Image>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
