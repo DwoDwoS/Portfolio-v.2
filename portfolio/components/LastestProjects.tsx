@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function LastestProjects() {
     return (
-              <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">Derniers Projets Réalisés</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-gray-800 rounded-lg overflow-hidden">
