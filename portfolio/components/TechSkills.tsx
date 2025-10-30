@@ -63,7 +63,8 @@ export default function TechSkills() {
               <li className="flex items-center gap-2">
                 <FontAwesomeIcon icon={faGithub} height={16} />
                 GitHub</li>
-              <li>Méthodologie Agile</li>
+              <li><img src="agile-svgrepo-com.svg" alt="Agile" className="inline h-4 w-4 mr-2"/>
+                Méthodologie Agile</li>
             </ul>
           </div>
         </div>
