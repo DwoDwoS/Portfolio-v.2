@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Resume() {
     return (
-        <section className="container mx-auto px-4 py-20 bg-[url('/background_homepage.jpg')] bg-cover bg-center rounded-lg shadow-lg mb-16">
+        <section className="container mx-auto px-4 py-20">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-5xl font-bold mb-6 animate-fade-in">
             Bonjour, je suis <span className="text-blue-200">Elouan</span>
