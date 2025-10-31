@@ -5,8 +5,8 @@ export default function Porfolio() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-linear-to-b from-gray-900 to-gray-700 text-white">
       <div className="flex flex-col items-center w-full gap-6 sm:items-start sm:text-left">
-        <h1 className="text-4xl font-bold mt-18 bg-linear-to-r from-blue-600 to-purple-600 inline-block mx-auto text-transparent bg-clip-text">
-          Mes projets :
+        <h1 className="text-4xl font-bold mt-18  inline-block mx-auto text-white">
+          Mes projets
         </h1>
         <p className="mx-auto text-lg text-center text-zinc-600 dark:text-zinc-400">
           Voici une preview de quelques-uns de mes projets récents. N'hésitez

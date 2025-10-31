@@ -29,7 +29,7 @@ export default function TechSkills() {
         Compétences Techniques
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-linear-to-b from-blue-600 to-blue-200 text-white p-6 rounded-lg">
+        <div className="bg-linear-to-b from-blue-700 to-blue-400 text-white p-6 rounded-lg">
           <h3 className="text-xl font-bold mb-4">Front-end</h3>
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
