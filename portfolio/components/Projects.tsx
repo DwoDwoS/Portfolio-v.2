@@ -71,7 +71,7 @@ export default function Projects() {
   }) {
     return (
       <div className="bg-blue-500/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-700/50 transform hover:-translate-y-0.5">
-        <div className="p-6 border-b border-gray-700/50">
+        <div className="p-6 bg-gray-900 border-b border-gray-700/50 text-center">
           <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
         </div>
 
@@ -93,12 +93,12 @@ export default function Projects() {
         </div>
 
         <div className="p-6 bg-neutral-900/50 mt-auto border-t border-gray-700/50">
-          <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+          <div className="flex flex-wrap gap-3 sm:justify-start xl:justify-center">
             <a
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-blue-600/50 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              className="inline-flex  bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Voir le projet
             </a>
@@ -106,7 +106,7 @@ export default function Projects() {
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-neutral-800/90 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              className="inline-flex bg-neutral-800/90 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Voir le code
             </a>
