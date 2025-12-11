@@ -9,16 +9,16 @@ export default function LastestProjects() {
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/Adaction_login.png"
-                alt="Adaction"
+                src="/ampunv.png"
+                alt="Ancien Meuble Pour Une Nouvelle Vie"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Adaction</h3>
+              <h3 className="text-xl font-bold mb-2">AMPUNV</h3>
               <p className="text-gray-300 mb-4">
-                Application de gestion de déchets par des bénévoles, pouvant faire des dons à des associations.
+                Site de ventes de meubles entre particuliers avec gestion de paiement.
               </p>
               <Link
                 href="/portfolio"
