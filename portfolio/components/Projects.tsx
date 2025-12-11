@@ -1,11 +1,32 @@
-
 export default function Projects() {
   const projects = [
+    {
+      title: "AMPUNV",
+      description:
+        "Site de vente de meubles entre particuliers avec gestion de paiement. Réalisé en solo durant 4 semaines.",
+      usedTechnologies: [
+        "React",
+        "Next",
+        "Tailwind CSS",
+        "Java",
+        "Spring Boot",
+        "Neon",
+        "Stripe",
+      ],
+      demoLink: "https://ampunv.vercel.app/",
+      githubLink: "https://github.com/DwoDwoS/ampunv_back",
+    },
     {
       title: "Adaction",
       description:
         "Application de gestion de bénévoles pour le recyclage des déchets, permettant aux utilisateurs de faire des dons à des associations. Réalisé en équipe de 2 durant 4 semaines.",
-      usedTechnologies: ["React", "Tailwind CSS", "Java", "Spring Boot", "Neon"],
+      usedTechnologies: [
+        "React",
+        "Tailwind CSS",
+        "Java",
+        "Spring Boot",
+        "Neon",
+      ],
       demoLink: "#",
       githubLink: "https://github.com/DwoDwoS/Project_Adaction_Front",
     },
@@ -13,15 +34,15 @@ export default function Projects() {
       title: "Adaopte",
       description:
         "Application d'adoption d'animaux avec recherche par filtres et gestion des annonces. Réalisé en équipe de 3 durant 2 semaines. Contraintes: pas de back-end, uniquement du front-end.",
-      usedTechnologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],  
-      demoLink: "https://dwodwos.github.io/projet_Adaopte/homepage",
+      usedTechnologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+      demoLink: "https://projet-adaopte.vercel.app/",
       githubLink: "https://github.com/DwoDwoS/projet_Adaopte",
     },
     {
       title: "ToDoList",
       description:
         "Application de gestion de tâches avec ajout, suppression et marquage comme terminé. Travail personnel pour pratiquer le JavaScript.",
-      usedTechnologies: ["HTML", "CSS", "JavaScript"],  
+      usedTechnologies: ["HTML", "CSS", "JavaScript"],
       demoLink: "https://dwodwos.github.io/ToDoList/",
       githubLink: "https://github.com/DwoDwoS/ToDoList",
     },
@@ -29,8 +50,8 @@ export default function Projects() {
       title: "Weather App",
       description:
         "Application de visualisation des données météorologiques avec graphiques interactifs. Réalisé en équipe de 3 durant 2 semaines.",
-      usedTechnologies: ["JavaScript", "D3.js", "Node.js", "Express"],  
-      demoLink: "https://dwodwos.github.io/Weather-Dataviz/Public/index",
+      usedTechnologies: ["JavaScript", "D3.js", "Node.js", "Express"],
+      demoLink: "https://weather-dataviz.onrender.com",
       githubLink: "https://github.com/DwoDwoS/Weather-Dataviz",
     },
   ];
@@ -51,25 +72,23 @@ export default function Projects() {
     return (
       <div className="bg-blue-500/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-700/50 transform hover:-translate-y-0.5">
         <div className="p-6 border-b border-gray-700/50">
-          <h3 className="text-2xl font-bold mb-2 text-white">
-            {title}
-          </h3>
+          <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
         </div>
 
         <div className="p-6 grow">
-          <p className="text-white mb-6 leading-relaxed">
-            {description}
-          </p>
+          <p className="text-white mb-6 leading-relaxed">{description}</p>
 
           <div className="flex flex-wrap gap-2 mb-6">
-            {usedTechnologies ? usedTechnologies.map((tech, index) => (
-              <span
-                key={index}
-                className="bg-gray-700 text-blue-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-600"
-              >
-                {tech}
-              </span>
-            )) : "N/A"}
+            {usedTechnologies
+              ? usedTechnologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-700 text-blue-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-600"
+                  >
+                    {tech}
+                  </span>
+                ))
+              : "N/A"}
           </div>
         </div>
 
@@ -88,14 +107,14 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-neutral-800/90 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
-              >
-                Voir le code
-              </a>
-            </div>
+            >
+              Voir le code
+            </a>
           </div>
         </div>
-      );
-    }
+      </div>
+    );
+  }
   return (
     <section className="container mx-auto px-4 py-16 w-100%">
       <h2 className="text-4xl font-bold mb-12 text-white text-center">
