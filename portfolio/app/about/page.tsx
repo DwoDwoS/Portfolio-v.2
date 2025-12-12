@@ -3,10 +3,10 @@ import Image from "next/image"
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-linear-to-b from-gray-900 to-gray-700 text-white columns-2">
-      <div className="max-w-2xl p-24">
+      <div className="max-w-2xl p-24 text-justify">
           <h2 className="text-3xl font-bold mb-4">À propos de moi</h2>
-          <p>Moi, c'est Elouan, apprenant <strong>Développeur Web/Concepteur d'Applications et Logiciels</strong> au sein d'ADA Tech School Nantes.
-            J'ai commencé ma formation en fin Mai 2025. Je suis actuellement à la recherche d'une alternance d'un an pour passer mon <strong>RNCP IV</strong>.</p>
+          <p>Elouan, apprenant <strong>Développeur Web/Concepteur d'Applications et Logiciels</strong> au sein d'ADA Tech School Nantes.
+            J'ai commencé ma formation en fin Mai 2025. Je suis actuellement à la recherche d'une alternance d'un an, à partir de Février 2026, pour passer mon <strong>RNCP IV</strong>.</p>
 
           <p className="my-6">Auparavant, j'étais éducateur spécialisé, principalement dans la Protection de l'Enfance, pendant une dizaine d'années.
             J'ai souhaité me réorienter après avoir fait un peu le tour du Social en général. J'ai voulu me challenger en reprenant des études dans un domaine que je connaissais moins.
@@ -18,7 +18,7 @@ export default function AboutPage() {
           </p>
       </div>
 
-      <div className="p-12">
+      <div className="p-8">
           <Image 
             src="/moi.jpg"
             alt="Une photo de moi"
