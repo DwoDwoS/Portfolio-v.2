@@ -5,9 +5,9 @@ export default function ContactPage() {
     <main className="min-h-screen bg-linear-to-b from-gray-900 to-gray-700 text-white">
       <div className="w-full max-w-2xl p-24 mx-auto">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">
             Contactez-moi
-          </h1>
+          </h2>
           <p className="text-gray-600 dark:text-gray-400">
             Vous avez un projet en tête ? Je serais ravi d'en discuter avec vous.
           </p>
