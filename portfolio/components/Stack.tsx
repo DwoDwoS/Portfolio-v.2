@@ -63,7 +63,8 @@ export default function Stack({
           { id: 1, img: '/Adaction_login.png' },
           { id: 2, img: '/adaopte.svg' },
           { id: 3, img: '/Todolist_preview.png' },
-          { id: 4, img: '/Weather_preview.png' }
+          { id: 4, img: '/Weather_preview.png' },
+          { id: 5, img: '/ampunv.png'}
         ]
   );
 
