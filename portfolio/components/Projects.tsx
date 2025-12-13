@@ -70,20 +70,22 @@ export default function Projects() {
     githubLink: string;
   }) {
     return (
-      <div className="bg-blue-500/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-700/50 transform hover:-translate-y-0.5">
-        <div className="p-6 bg-gray-900 border-b border-gray-700/50 text-center">
-          <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
+      <div className="relative bg-linear-to-br from-blue-600/30 via-purple-600/20 to-pink-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+        <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div className="relative p-6 bg-linear-to-r from-blue-500/20 to-purple-500/20 border-b border-blue-400/30 text-center">
+          <h3 className="text-2xl font-bold mb-2 text-white drop-shadow-[0_2px_10px_rgba(59,130,246,0.5)]">{title}</h3>
         </div>
 
-        <div className="p-6 grow">
-          <p className="text-white mb-6 leading-relaxed">{description}</p>
+        <div className="relative p-6 grow bg-linear-to-b from-transparent to-black/20">
+          <p className="text-gray-100 mb-6 leading-relaxed drop-shadow-lg">{description}</p>
 
           <div className="flex flex-wrap gap-2 mb-6">
             {usedTechnologies
               ? usedTechnologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="bg-gray-700 text-blue-300 px-3 py-1 rounded-full text-sm font-medium border border-gray-600"
+                    className="bg-blue-500/30 backdrop-blur-md text-blue-100 px-3 py-1.5 rounded-full text-sm font-medium border border-blue-300/50 shadow-lg hover:bg-blue-400/40 hover:scale-105 transition-all duration-300"
                   >
                     {tech}
                   </span>
@@ -92,13 +94,13 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="p-6 bg-neutral-900/50 mt-auto border-t border-gray-700/50">
+        <div className="relative p-6 bg-linear-to-t from-blue-900/40 to-transparent mt-auto border-t border-blue-400/30">
           <div className="flex flex-wrap gap-3 sm:justify-start xl:justify-center">
             <a
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex  bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              className="inline-flex bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl font-medium"
             >
               Voir le projet
             </a>
@@ -106,7 +108,7 @@ export default function Projects() {
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex bg-neutral-800/90 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              className="inline-flex bg-slate-700 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl font-medium border border-slate-500"
             >
               Voir le code
             </a>
