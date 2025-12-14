@@ -6,7 +6,7 @@ export default function LastestProjects() {
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">Derniers Projets Réalisés</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+          <div className="relative bg-linear-to-br from-blue-600/30 via-blue-400/50 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
             <div className="relative h-48">
               <Image
                 src="/ampunv.png"
@@ -22,14 +22,14 @@ export default function LastestProjects() {
               </p>
               <Link
                 href="/projects"
-                className="text-blue-400 hover:text-blue-300"
+                className="text-blue-300 hover:text-blue-100"
               >
                 En savoir plus →
               </Link>
             </div>
           </div>
           
-          <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+          <div className="relative bg-linear-to-br from-blue-600/30 via-blue-400/50 to-blue-600/30  backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
             <div className="relative h-48">
               <Image
                 src="/adaopte.svg"
@@ -45,7 +45,7 @@ export default function LastestProjects() {
               </p>
               <Link
                 href="/projects"
-                className="text-blue-400 hover:text-blue-300"
+                className="text-blue-300 hover:text-blue-100"
               >
                 En savoir plus →
               </Link>

@@ -16,12 +16,12 @@
 /* Mode clair (par défaut) */
 .light {
   --bg-primary: 248 250 252;
-  --bg-secondary: 241 245 249;
-  --bg-tertiary: 226 232 240;
+  --bg-secondary: 203 213 225;
+  --bg-tertiary: 148 163 184;
   --text-primary: 15 23 42;
   --text-secondary: 51 65 85;
   --text-tertiary: 100 116 139;
-  --border-color: 203 213 225;
+  --border-color: 148 163 184;
   --accent-primary: 37 99 235;
   --accent-hover: 29 78 216;
 }
@@ -46,4 +46,21 @@ html, body {
 
 body {
   transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* Variables pour bouton primary gradient (blue) */
+.light {
+  --btn-grad-from: #BFDBFE;
+  --btn-grad-via: #60A5FA;
+  --btn-grad-to: #2563EB;
+  --btn-text: #0F172A;
+  --btn-border: #2563EB;
+}
+
+.dark {
+  --btn-grad-from: #60A5FA;
+  --btn-grad-via: #2563EB;
+  --btn-grad-to: #1E3A8A;
+  --btn-text: #F8FAFC;
+  --btn-border: #3B82F6;
 }
