@@ -1,7 +1,7 @@
 import Stack from '@/components/Stack';
 import Projects from '@/components/Projects';
 
-export default function Porfolio() {
+export default function ProjectsPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-linear-to-b from-gray-900 to-gray-700 text-white">
       <div className="flex flex-col items-center w-full gap-6 sm:items-start sm:text-left">

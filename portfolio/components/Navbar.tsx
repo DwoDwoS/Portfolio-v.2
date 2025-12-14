@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: '/', label: 'Accueil', icon: faHome },
-    { href: '/portfolio', label: 'Portfolio', icon: faFolderOpen },
+    { href: '/projects', label: 'Portfolio', icon: faFolderOpen },
     { href: '/about', label: 'À propos', icon: faUser },
     { href: '/contact', label: 'Contact', icon: faEnvelope },
   ];

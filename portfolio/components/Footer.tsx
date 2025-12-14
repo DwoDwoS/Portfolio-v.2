@@ -27,7 +27,7 @@ const Footer = () => {
                 Accueil
               </Link>
               <Link 
-                href="/portfolio" 
+                href="/projects" 
                 className="hover:text-blue-400 transition-colors duration-200 hover:translate-x-1 inline-block"
               >
                 Portfolio
