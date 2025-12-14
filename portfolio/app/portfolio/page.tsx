@@ -1,5 +1,5 @@
-import Stack from "@/components/Stack";
-import Projects from "@/components/Projects";
+import Stack from '@/components/Stack';
+import Projects from '@/components/Projects';
 
 export default function Porfolio() {
   return (

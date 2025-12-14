@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 const Footer = () => {
   return (
     <footer className="bg-linear-to-b from-gray-900 to-gray-950 text-gray-300 border-t border-gray-800">
