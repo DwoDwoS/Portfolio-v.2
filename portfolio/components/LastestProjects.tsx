@@ -21,7 +21,7 @@ export default function LastestProjects() {
                 Site de ventes de meubles entre particuliers avec gestion de paiement.
               </p>
               <Link
-                href="/portfolio"
+                href="/projects"
                 className="text-blue-400 hover:text-blue-300"
               >
                 En savoir plus →
@@ -44,7 +44,7 @@ export default function LastestProjects() {
                 Application d'adoption d'animaux avec recherche par filtres et gestion des annonces.
               </p>
               <Link
-                href="/portfolio"
+                href="/projects"
                 className="text-blue-400 hover:text-blue-300"
               >
                 En savoir plus →

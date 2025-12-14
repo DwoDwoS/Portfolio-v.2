@@ -12,7 +12,7 @@ export default function Resume() {
           </p>
           <div className="flex gap-4">
             <Link
-              href="/portfolio"
+              href="/projects"
               className="border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Voir mes projets
