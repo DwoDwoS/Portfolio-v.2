@@ -5,13 +5,8 @@ import {
   faNode,
   faGithub,
   faJs,
-  faHtml5,
   faCss3Alt,
-  faGitAlt,
-  faNpm,
   faDocker,
-  faAws,
-  faLinux,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faDatabase,
@@ -19,7 +14,6 @@ import {
   faCode,
   faMobile,
   faGears,
-  faListCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function TechSkills() {
@@ -39,6 +33,10 @@ export default function TechSkills() {
             <li className="flex items-center gap-2">
               <FontAwesomeIcon icon={faCode} height={16} />
               TypeScript
+            </li>
+            <li className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faJs} height={16} />
+              JavaScript
             </li>
             <li className="flex items-center gap-2">
               <FontAwesomeIcon icon={faCss3Alt} height={16} />
@@ -93,6 +91,10 @@ export default function TechSkills() {
                 className="inline h-4 w-4 mr-2"
               />
               Méthodologie Agile
+            </li>
+            <li className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faDocker} height={16} />
+              Docker
             </li>
           </ul>
         </div>
