@@ -70,7 +70,7 @@ export default function Projects() {
     githubLink: string;
   }) {
     return (
-      <div className="relative bg-linear-to-br from-blue-600/30 via-purple-600/20 to-pink-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+      <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
         <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
         
         <div className="relative p-6 bg-linear-to-r from-blue-500/20 to-purple-500/20 border-b border-blue-400/30 text-center">
@@ -100,7 +100,7 @@ export default function Projects() {
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl font-medium"
+              className="border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Voir le projet
             </a>
@@ -108,7 +108,7 @@ export default function Projects() {
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex bg-slate-700 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl font-medium border border-slate-500"
+              className="border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Voir le code
             </a>

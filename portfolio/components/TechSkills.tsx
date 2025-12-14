@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faJava,
   faReact,
@@ -12,7 +12,7 @@ import {
   faDocker,
   faAws,
   faLinux,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faDatabase,
   faServer,
@@ -20,7 +20,7 @@ import {
   faMobile,
   faGears,
   faListCheck,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function TechSkills() {
   return (
@@ -29,9 +29,9 @@ export default function TechSkills() {
         Compétences Techniques
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-linear-to-b from-blue-700 to-blue-400 text-white p-6 rounded-lg">
-          <h3 className="text-xl font-bold mb-4">Front-end</h3>
-          <ul className="space-y-2">
+        <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+          <h3 className="text-xl font-bold mb-4 mt-4 mx-auto">Front-end</h3>
+          <ul className="space-y-2 mx-auto mb-4">
             <li className="flex items-center gap-2">
               <FontAwesomeIcon icon={faReact} height={16} />
               React & Next.js
@@ -50,9 +50,9 @@ export default function TechSkills() {
             </li>
           </ul>
         </div>
-        <div className="bg-gray-600 p-6 rounded-lg">
-          <h3 className="text-xl font-bold mb-4">Back-end</h3>
-          <ul className="space-y-2">
+        <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+          <h3 className="text-xl font-bold mb-4 mt-4 mx-auto">Back-end</h3>
+          <ul className="space-y-2 mx-auto mb-4">
             <li className="flex items-center gap-2">
               <FontAwesomeIcon icon={faNode} height={16} />
               Node.js
@@ -79,9 +79,9 @@ export default function TechSkills() {
             </li>
           </ul>
         </div>
-        <div className="bg-gray-600 p-6 rounded-lg">
-          <h3 className="text-xl font-bold mb-4">Outils & Méthodes</h3>
-          <ul className="space-y-2">
+        <div className="relative bg-linear-to-br from-blue-600/30 via-blue-600/20 to-blue-600/30 backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 flex flex-col h-full border border-blue-400/50 hover:border-blue-300/80 transform hover:-translate-y-2 hover:scale-[1.02]">
+          <h3 className="text-xl font-bold mb-4 mt-4 mx-auto">Outils & Méthodes</h3>
+          <ul className="space-y-2 mx-auto mb-4">
             <li className="flex items-center gap-2">
               <FontAwesomeIcon icon={faGithub} height={16} />
               GitHub
