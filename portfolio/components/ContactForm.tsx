@@ -14,7 +14,7 @@ export default function ContactForm() {
         <div>
           <label 
             htmlFor="name" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Nom
           </label>
@@ -34,7 +34,7 @@ export default function ContactForm() {
         <div>
           <label 
             htmlFor="email" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Email
           </label>
@@ -60,7 +60,7 @@ export default function ContactForm() {
         <div>
           <label 
             htmlFor="message" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Message
           </label>

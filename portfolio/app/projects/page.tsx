@@ -3,12 +3,12 @@ import Projects from '@/components/Projects';
 
 export default function ProjectsPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-linear-to-b from-gray-900 to-gray-700 text-white">
+    <div className="flex min-h-screen items-center justify-center transition-colors duration-300 bg-[rgb(var(--bg-primary))] text-[rgb(var(--text-primary))]">
       <div className="flex flex-col items-center w-full gap-6 sm:items-start sm:text-left">
-        <h2 className="text-4xl font-bold mt-18  inline-block mx-auto text-white">
+        <h2 className="text-4xl font-bold mt-18 inline-block mx-auto">
           Mes projets
         </h2>
-        <p className="mx-auto text-lg text-center text-zinc-600 dark:text-zinc-400">
+        <p className="mx-auto text-lg text-center text-[rgb(var(--text-secondary))]">
           Voici une preview de quelques-uns de mes projets récents. N'hésitez
           pas à explorer et à me contacter pour toute collaboration ou
           opportunité professionnelle.

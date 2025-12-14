@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-gray-900 to-gray-700 text-white">
+    <main className="min-h-screen transition-colors duration-300 bg-[rgb(var(--bg-primary))] text-[rgb(var(--text-primary))]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="order-2 lg:order-1 text-center lg:text-justify space-y-6">

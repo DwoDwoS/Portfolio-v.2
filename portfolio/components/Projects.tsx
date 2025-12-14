@@ -74,11 +74,11 @@ export default function Projects() {
         <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
         
         <div className="relative p-6 bg-linear-to-r from-blue-500/20 to-purple-500/20 border-b border-blue-400/30 text-center">
-          <h3 className="text-2xl font-bold mb-2 text-white drop-shadow-[0_2px_10px_rgba(59,130,246,0.5)]">{title}</h3>
+          <h3 className="text-2xl font-bold mb-2 drop-shadow-[0_2px_10px_rgba(59,130,246,0.5)] text-[rgb(var(--text-secondary))]">{title}</h3>
         </div>
 
         <div className="relative p-6 grow bg-linear-to-b from-transparent to-black/20">
-          <p className="text-gray-100 mb-6 leading-relaxed drop-shadow-lg">{description}</p>
+          <p className="text-[rgb(var(--text-secondary))] mb-6 leading-relaxed drop-shadow-lg">{description}</p>
 
           <div className="flex flex-wrap gap-2 mb-6">
             {usedTechnologies

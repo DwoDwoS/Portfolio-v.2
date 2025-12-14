@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faHome, faFolderOpen, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,17 +32,15 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' 
-          : 'bg-gray-900'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-sm shadow-lg`}
+      style={{ backgroundColor: `rgba(${isScrolled ? 'var(--bg-primary)' : 'var(--bg-primary)'}, ${isScrolled ? 0.95 : 1})` }}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link 
             href="/about" 
-            className="text-xl font-bold text-white hover:text-blue-400 transition-colors"
+            className="text-xl font-bold transition-colors"
+            style={{ color: 'rgb(var(--text-primary))' }}
           >
             <Image 
               src="/favicon_DoDoS_SVG.svg"
@@ -52,32 +51,34 @@ const Navbar = () => {
             </Image>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map(({ href, label, icon }) => (
               <Link
                 key={href}
                 href={href}
-                className={`flex items-center space-x-2 py-2 text-sm font-medium transition-all
-                  ${pathname === href 
-                    ? 'text-blue-400' 
-                    : 'text-gray-300 hover:text-white hover:-translate-y-0.5'
-                  }`}
+                className={`flex items-center space-x-2 py-2 text-sm font-medium transition-all hover:-translate-y-0.5`}
+                style={{ color: pathname === href ? 'rgb(var(--accent-primary))' : 'rgb(var(--text-secondary))' }}
               >
                 <FontAwesomeIcon icon={icon} className="h-4" />
                 <span>{label}</span>
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          <button
-            className="md:hidden text-gray-300 hover:text-white focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <FontAwesomeIcon 
-              icon={isOpen ? faTimes : faBars} 
-              className="h-6 w-6"
-            />
-          </button>
+          <div className="md:hidden flex items-center space-x-3">
+            <ThemeToggle />
+            <button
+              className="focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <FontAwesomeIcon 
+                icon={isOpen ? faTimes : faBars} 
+                className="h-6 w-6"
+                style={{ color: 'rgb(var(--text-secondary))' }}
+              />
+            </button>
+          </div>
         </div>
 
         <div
@@ -93,11 +94,11 @@ const Navbar = () => {
                 key={href}
                 href={href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center space-x-2 p-3 rounded-lg transition-colors
-                  ${pathname === href
-                    ? 'text-blue-400 bg-gray-800'
-                    : 'text-gray-300 hover:text-white hover:bg-gray-800'
-                  }`}
+                className={`flex items-center space-x-2 p-3 rounded-lg transition-colors`}
+                style={{ 
+                  color: pathname === href ? 'rgb(var(--accent-primary))' : 'rgb(var(--text-secondary))',
+                  backgroundColor: pathname === href ? 'rgb(var(--bg-secondary))' : undefined
+                }}
               >
                 <FontAwesomeIcon icon={icon} className="h-4" />
                 <span>{label}</span>
