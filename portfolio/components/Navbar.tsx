@@ -7,11 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faHome, faFolderOpen, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ThemeToggle from './ThemeToggle';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,12 +45,11 @@ const Navbar = () => {
             style={{ color: 'rgb(var(--text-primary))' }}
           >
             <Image 
-              src="/favicon_DoDoS_SVG.svg"
+              src={theme === 'dark' ? "/favicon_DoDoS_SVG.svg" : "/favicon_DoDoS_SVG_light.svg"}
               alt="Logo DoDoS"
               width={64}
-              height={1}
-              >
-            </Image>
+              height={64}
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
