@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className={`p-2 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
         theme === 'light'
-          ? 'bg-gray-800 hover:bg-gray-700 text-yellow-400 focus:ring-offset-gray-900'
+          ? 'bg-gray-800 hover:bg-gray-700 text-blue-400 focus:ring-offset-gray-900'
           : 'bg-gray-400 hover:bg-gray-500 text-yellow-400 focus:ring-offset-gray-800'
       }`}
       aria-label={theme === 'light' ? 'Passer en mode sombre' : 'Passer en mode clair'}
