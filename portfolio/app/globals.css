@@ -12,3 +12,52 @@
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
 }
+
+.light {
+  --bg-primary: 255 251 240;
+  --bg-secondary: 255 232 204;
+  --bg-tertiary: 255 217 168;
+  --text-primary: 15 23 42;
+  --text-secondary: 51 65 85;
+  --text-tertiary: 100 116 139;
+  --border-color: 229 201 170;
+  --accent-primary: 37 99 235;
+  --accent-hover: 29 78 216;
+}
+
+.dark {
+  --bg-primary: 15 23 42;
+  --bg-secondary: 30 41 59;
+  --bg-tertiary: 51 65 85;
+  --text-primary: 248 250 252;
+  --text-secondary: 226 232 240;
+  --text-tertiary: 148 163 184;
+  --border-color: 71 85 105;
+  --accent-primary: 59 130 246;
+  --accent-hover: 96 165 250;
+}
+
+html, body {
+  background-color: rgb(var(--bg-primary));
+  color: rgb(var(--text-primary));
+}
+
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.light {
+  --btn-grad-from: #FFE4B5;
+  --btn-grad-via: #FFBD59;
+  --btn-grad-to: #FF9F1C;
+  --btn-text: #0F172A;
+  --btn-border: #E8944D;
+}
+
+.dark {
+  --btn-grad-from: #60A5FA;
+  --btn-grad-via: #2563EB;
+  --btn-grad-to: #1E3A8A;
+  --btn-text: #F8FAFC;
+  --btn-border: #3B82F6;
+}

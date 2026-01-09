@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Button from './Button'
 
 export default function HomePageContact() {
     return (
@@ -8,12 +8,12 @@ export default function HomePageContact() {
           <p className="text-xl mb-6">
             Je suis ouvert aux opportunités de collaboration et aux nouveaux défis.
           </p>
-          <Link
+          <Button
             href="/contact"
-            className="border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition-colors"
+            variant="primary"
           >
             Discutons de votre projet
-          </Link>
+          </Button>
         </div>
     </section>
     );

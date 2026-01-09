@@ -5,7 +5,7 @@ import Resume from '@/components/Resume'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-gray-900 to-gray-700 text-white">
+      <main className="min-h-screen transition-colors duration-300 bg-[rgb(var(--bg-primary))] text-[rgb(var(--text-primary))]">
       <Resume />
       <TechSkills />
       <LastestProjects />

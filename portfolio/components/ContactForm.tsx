@@ -3,10 +3,12 @@ import { useForm, ValidationError } from '@formspree/react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faSpinner, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { useTheme } from '@/contexts/ThemeContext';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("mqaglydl");
   const [isHovered, setIsHovered] = useState(false);
+  const { theme } = useTheme();
 
   return (
     <div className="w-full max-w-2xl">
@@ -14,7 +16,7 @@ export default function ContactForm() {
         <div>
           <label 
             htmlFor="name" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Nom
           </label>
@@ -23,18 +25,18 @@ export default function ContactForm() {
             type="text"
             name="name"
             required
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-                     focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     bg-white dark:bg-gray-800 dark:text-white
-                     transition duration-200 ease-in-out"
+            className={`w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out ${
+              theme === 'light' 
+                ? 'bg-amber-50 text-gray-900 border-gray-300 placeholder-gray-500' 
+                : 'bg-gray-800 text-white border-gray-600 placeholder-gray-400'
+            }`}
             placeholder="Votre nom ou pseudo"
           />
         </div>
-
         <div>
           <label 
             htmlFor="email" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Email
           </label>
@@ -43,10 +45,11 @@ export default function ContactForm() {
             type="email"
             name="email"
             required
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-                     focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     bg-white dark:bg-gray-800 dark:text-white
-                     transition duration-200 ease-in-out"
+            className={`w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out ${
+              theme === 'light' 
+                ? 'bg-amber-50 text-gray-900 border-gray-300 placeholder-gray-500' 
+                : 'bg-gray-800 text-white border-gray-600 placeholder-gray-400'
+            }`}
             placeholder="Votre adresse mail"
           />
           <ValidationError 
@@ -60,7 +63,7 @@ export default function ContactForm() {
         <div>
           <label 
             htmlFor="message" 
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="text-[rgb(var(--text-secondary))]"
           >
             Message
           </label>
@@ -69,10 +72,11 @@ export default function ContactForm() {
             name="message"
             required
             rows={5}
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-                     focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     bg-white dark:bg-gray-800 dark:text-white
-                     transition duration-200 ease-in-out resize-none"
+            className={`w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out resize-none ${
+              theme === 'light' 
+                ? 'bg-amber-50 text-gray-900 border-gray-300 placeholder-gray-500' 
+                : 'bg-gray-800 text-white border-gray-600 placeholder-gray-400'
+            }`}
             placeholder="Votre message..."
           />
           <ValidationError 
