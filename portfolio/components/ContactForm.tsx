@@ -96,7 +96,7 @@ export default function ContactForm() {
                    transition-all duration-200 ease-in-out
                    ${state.succeeded
                      ? 'bg-green-500 hover:bg-green-600'
-                     : 'bg-blue-600 hover:bg-blue-700'
+                     : `${theme === 'light' ? 'bg-linear-to-br from-amber-400 to-amber-500 via-amber-400 hover:bg-amber-500' : 'bg-blue-800 hover:bg-blue-900'}`
                    }
                    disabled:opacity-75 disabled:cursor-not-allowed
                    hover:-translate-y-0.5
