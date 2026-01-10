@@ -90,7 +90,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 text-white"
-                style={{ backgroundColor: "rgb(var(--accent-primary))" }}
+                style={{ backgroundColor: "#0077B5" }}
                 aria-label="LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="h-5" />
