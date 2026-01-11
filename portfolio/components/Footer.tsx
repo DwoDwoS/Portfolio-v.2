@@ -22,8 +22,7 @@ const Footer = () => {
               Mon Portfolio
             </h3>
             <p className="leading-relaxed">
-              Développeur Full Stack passionné par la création d'expériences web
-              innovantes et performantes. <br />
+              Développeur Full Stack en devenir passionné par la création d'expériences web. <br />
               D'un naturel curieux et avec une envie d'apprendre considérable.
             </p>
           </div>
