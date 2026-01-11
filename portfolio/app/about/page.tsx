@@ -11,7 +11,7 @@ export default function AboutPage() {
               J'ai commencé ma formation en fin Mai 2025. Je suis actuellement à la recherche d'une alternance d'un an, à partir de Février 2026, pour passer mon <strong>RNCP IV</strong>.</p>
 
             <p>Auparavant, j'étais éducateur spécialisé, principalement dans la Protection de l'Enfance, pendant une dizaine d'années.
-              J'ai souhaité me réorienter après avoir fait un peu le tour du Social en général. J'ai voulu me challenger en reprenant des études dans un domaine que je connaissais moins.
+              J'ai pu développer une expertise dans mon milieu précédent et j'ai pu partager mon savoir sur les dernières années passées sur mon poste. J'ai donc voulu me challenger en reprenant des études dans un domaine que je connaissais moins.
               J'avais déjà repéré des besoins dans le Social en lien avec l'informatique, améliorer les logiciels utilisés par les équipes, concentrer les informations pour qu'elles soient accessibles plus facilement, etc.
             </p>
 
