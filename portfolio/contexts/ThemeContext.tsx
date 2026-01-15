@@ -11,15 +11,14 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const getInitialTheme = (): Theme => {
-  if (typeof window === 'undefined') return 'light';
+  if (typeof window === 'undefined') return 'dark';
   
   const saved = localStorage.getItem('theme') as Theme | null;
   if (saved && (saved === 'light' || saved === 'dark')) {
     return saved;
   }
   
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  return prefersDark ? 'dark' : 'light';
+  return 'dark';
 };
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
