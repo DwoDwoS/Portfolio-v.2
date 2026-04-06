@@ -4,6 +4,20 @@ import { useTheme } from "@/contexts/ThemeContext";
 export default function Projects() {
   const projects = [
     {
+      title: "SQLock Holmes",
+      description:
+        "Site de résolution d'enquêtes policières en utilisant des requêtes SQL. L'objectif est d'apprendre de manière ludique les bases de données relationnelles et le langage SQL. Réalisé en solo - En évolution permanente.",
+      usedTechnologies: [
+        "React",
+        "Vite",
+        "Java",
+        "Spring Boot",
+        "PostgreSQL"
+      ],
+      demoLink: "https://sqlock-holmes.fr/",
+      githubLink: "https://github.com/DwoDwoS/sqlock-holmes-front",
+    },
+    {
       title: "AMPUNV",
       description:
         "Site de vente de meubles entre particuliers avec gestion de paiement. Réalisé en solo durant 4 semaines.",
