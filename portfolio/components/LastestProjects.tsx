@@ -13,16 +13,16 @@ export default function LastestProjects() {
           <div className={`${theme === 'light' ? 'bg-linear-to-br from-amber-300/50 via-amber-100/70 to-amber-400/50 hover:shadow-amber-500/50 border-amber-300/50 hover:border-amber-200/80' : 'bg-linear-to-br from-blue-600/30 via-blue-400/50 to-blue-600/30 hover:shadow-blue-500/50 border-blue-400/50 hover:border-blue-300/80'} relative backdrop-blur-xl rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 flex flex-col h-full border transform hover:-translate-y-2 hover:scale-[1.02]`}>
             <div className="relative h-48">
               <Image
-                src="/ampunv.png"
-                alt="Ancien Meuble Pour Une Nouvelle Vie"
+                src="/Sqlock-holmes.png"
+                alt="SQLock Holmes"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">AMPUNV</h3>
+              <h3 className="text-xl font-bold mb-2">SQLock Holmes</h3>
               <p className={`${theme === 'light' ? 'text-gray-700 mb-4' : 'text-gray-300 mb-4'}`}>
-                Site de ventes de meubles entre particuliers avec gestion de paiement.
+                Site de résolution d'enquêtes policières en utilisant des requêtes SQL. L'objectif est d'apprendre de manière ludique les bases de données relationnelles et le langage SQL. Réalisé en solo - En évolution permanente.
               </p>
               <Link
                 href="/projects"

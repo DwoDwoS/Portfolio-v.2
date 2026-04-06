@@ -49,6 +49,7 @@ const Navbar = () => {
               alt="Logo DoDoS"
               width={64}
               height={64}
+              style={{ width: 64, height: 'auto' }}
             />
           </Link>
 
